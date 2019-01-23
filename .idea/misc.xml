@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/SearchPicBackend/pom.xml" />
         <option value="$PROJECT_DIR$/SearchPicUML/pom.xml" />
+        <option value="$PROJECT_DIR$/SearchPicApp/pom.xml" />
       </list>
     </option>
   </component>

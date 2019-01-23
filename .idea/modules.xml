@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SearchPic.iml" filepath="$PROJECT_DIR$/.idea/SearchPic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SearchPicBackend/searchPicSpring.iml" filepath="$PROJECT_DIR$/SearchPicBackend/searchPicSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SearchPicApp/searchPicSpring.iml" filepath="$PROJECT_DIR$/SearchPicApp/searchPicSpring.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchPicUML/uml.iml" filepath="$PROJECT_DIR$/SearchPicUML/uml.iml" />
     </modules>
   </component>
