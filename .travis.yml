@@ -12,11 +12,11 @@ jobs:
         - mvn org.jacoco:jacoco-maven-plugin:prepare-agent javadoc:javadoc verify sonar:sonar
         - cd ..
         - "git clone https://github.com/DrazenFH/searchPicDocs.git"
-        - rm -rf docs/generated/jacoco-ut docs/generated/jacoco-it docs/generated/apidocs
-        - cp -r application/target/site/jacoco-ut docs/generated/
-        - cp -r application/target/site/jacoco-it docs/generated/
-        - cp -r application/target/site/apidocs docs/generated/
-        - cd docs/generated
+        - rm -rf searchPicDocs/generated/jacoco-ut docs/generated/jacoco-it docs/generated/apidocs
+        - cp -r SearchPic/target/site/jacoco-ut docs/generated/
+        - cp -r SearchPic/target/site/jacoco-it docs/generated/
+        - cp -r SearchPic/target/site/apidocs docs/generated/
+        - cd searchPicDocs/generated
         - git add --all
         - git commit -am "update documentation"
         - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
@@ -34,11 +34,11 @@ jobs:
         - mvn verify
         - cd ..
         - "git clone https://github.com/DrazenFH/searchPicDocs.git"
-        - rm -rf docs/generated/cukedoctor docs/generated/walk_through.mp4
+        - rm -rf searchPicDocs/generated/cukedoctor docs/generated/walk_through.mp4
         - cp -r tests/target/cukedoctor docs/generated/
-        - rm -rf docs/generated/jmeter
-        - cp -r tests/target/jmeter/reports/performance* docs/generated/jmeter
-        - cd docs/generated
+        - rm -rf searchPicDocs/generated/jmeter
+        - cp -r searchPicTests/target/jmeter/reports/performance* searchPicDocs/generated/jmeter
+        - cd searchPicDocs/generated
         - ../../tests/scripts/get_testingbot_video.py
         - git add --all
         - git commit -am "update documentation"
