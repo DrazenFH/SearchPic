@@ -24,16 +24,16 @@ jobs:
       script: skip
       deploy: &heroku
         provider: heroku
-        app: fhv-application-staging
-        api_key: $HEROKU_API_KEY
+        app: searchpic-staging
+        api_key: ${HEROKU_TOKEN}
     - stage: automatic user acceptance and performance tests on staging
       script:
         - cd ..
-        - "git clone https://github.com/DrazenFH/SearchPic.git/searchPicTests.git"
+        - "git clone https://github.com/DrazenFH/searchPicTests.git"
         - cd tests
         - mvn verify
         - cd ..
-        - "git clone https://github.com/DrazenFH/SearchPic.git/searchPicDocs.git"
+        - "git clone https://github.com/DrazenFH/searchPicDocs.git"
         - rm -rf docs/generated/cukedoctor docs/generated/walk_through.mp4
         - cp -r tests/target/cukedoctor docs/generated/
         - rm -rf docs/generated/jmeter
@@ -47,4 +47,4 @@ jobs:
       script: skip
       deploy:
         <<: *heroku
-        app: fhv-application
+        app: searchpic
