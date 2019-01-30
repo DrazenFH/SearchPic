@@ -1,15 +1,13 @@
 jobs:
   include:
     - stage: build application
-      install:
-        - cp .travis.settings.xml $HOME/.m2/settings.xml
       script:
-        - mvn deploy
+        - mvn install
     - stage: static code analysis
       addons:
         sonarcloud:
           organization: fhv-continuous-delivery
-          token: $b9f6d6a3582ade9e2223b738f9df249aea99b4f7
+          token: ${SONAR_TOKEN}
       script:
         - mvn org.jacoco:jacoco-maven-plugin:prepare-agent javadoc:javadoc verify sonar:sonar
         - cd ..
@@ -21,7 +19,7 @@ jobs:
         - cd docs/generated
         - git add --all
         - git commit -am "update documentation"
-        - git push "https://${LvDRLvHErOGeNUwDyFcXgw}@github.com/DrazenFH/SearchPic.git/docs.git" master
+        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/SearchPic.git/docs.git" master
     - stage: deploy to staging
       script: skip
       deploy: &heroku
