@@ -2,10 +2,4 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
   http://maven.apache.org/xsd/settings-1.0.0.xsd">
-	<servers>
-		<server>
-			<id>packagecloud-fhv-msi</id>
-			<password>${env.b9f6d6a3582ade9e2223b738f9df249aea99b4f7}</password>
-		</server>
-	</servers>
 </settings>
