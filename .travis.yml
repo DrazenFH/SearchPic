@@ -11,7 +11,7 @@ jobs:
       script:
         - mvn org.jacoco:jacoco-maven-plugin:prepare-agent javadoc:javadoc verify sonar:sonar
         - cd ..
-        - "git clone https://github.com/DrazenFH/SearchPic.git/searchPicDocs.git"
+        - "git clone https://github.com/DrazenFH/searchPicDocs.git"
         - rm -rf docs/generated/jacoco-ut docs/generated/jacoco-it docs/generated/apidocs
         - cp -r application/target/site/jacoco-ut docs/generated/
         - cp -r application/target/site/jacoco-it docs/generated/
@@ -19,7 +19,7 @@ jobs:
         - cd docs/generated
         - git add --all
         - git commit -am "update documentation"
-        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/SearchPic.git/docs.git" master
+        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
     - stage: deploy to staging
       script: skip
       deploy: &heroku
@@ -42,7 +42,7 @@ jobs:
         - ../../tests/scripts/get_testingbot_video.py
         - git add --all
         - git commit -am "update documentation"
-        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/SearchPic.git/docs.git" master
+        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
     - stage: deploy to production
       script: skip
       deploy:
