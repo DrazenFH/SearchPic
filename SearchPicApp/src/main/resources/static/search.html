@@ -1,69 +1,105 @@
 <!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<title>Show Picture</title>
+		<title>Search Picture</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-		<link rel="stylesheet" href="css/styleInput.css">
-		<script src='js/search.js'></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload-0 is-preload-1 is-preload-2">
-		
-		<!-- Main -->
-			<div id="main">
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<!-- Header Titel of the Website -->
-						<h1>Search Picture</h1>
-
-						<!-- Here we have the Show histroy Button -->
-						<p>Show <a href="history.html">History</a></p>
-
-						<!-- Textbox -->
-						<input type="text" placeholder="Search term..." onkeydown="search(this)"/>
+						<h1><a href="search.html">Search Picture</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
 					</header>
 
-				<!-- Thumbnail -->
-					<section id="thumbnails">
-						<article>
-							<a class="thumbnail" href="images/fulls/Default.jpg" data-position="left center"><img src="images/thumbs/01.jpg" alt="" /></a>
-						</article>
-						<article>
-							<a class="thumbnail" href="http://farm5.staticflickr.com/4887/45849250455_fe483a156b.jpg"><img src="http://farm5.staticflickr.com/4887/45849250455_fe483a156b.jpg" alt="" /></a>
-						</article>
-						<article>
-							<a id="article01Href" class="thumbnail" href="images/fulls/03.jpg" data-position="top center"><img id="article01Image" src="images/thumbs/03.jpg" alt="" /></a>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
-						</article>
-						<article>
-							<a class="thumbnail" href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" /></a>
-						</article>
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="history.html">History</a></li>
+								<li><a id="logoutBtn" href="login.html">Sign Out</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Search Picture</h2>
+
+								<form id="searchForm" onsubmit="return(false);">
+								<div class="col-12">
+									<input id="searchText" type="text" name="searchText" id="searchText" value="" placeholder="Search name.."/>
+								</div>
+								</br>
+								<div class="col-12">
+									<input type="submit" id="searchBtn" value="Search" class="primary" />
+								</div>
+							</form>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<section>
+										<h3 class="major">Results</h3>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-4"><span class="image fit"><img id="img01" src="images/pic05.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img id="img02" src="images/pic06.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img id="img03" src="images/pic07.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img id="img04" src="images/pic07.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img id="img05" src="images/pic05.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img id="img06" src="images/pic06.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img id="img07" src="images/pic06.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img id="img08" src="images/pic07.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img id="img09" src="images/pic05.jpg" alt="" /></span></div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+
 					</section>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: FHV.</li>
-						</ul>
-					</footer>
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: FHV</li>
+							</ul>
+						</div>
+					</section>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/sessionStorage.js"></script>
 			<script src="assets/js/search.js"></script>
+        	<script src="assets/js/auth.js"></script>
 
 	</body>
 </html>

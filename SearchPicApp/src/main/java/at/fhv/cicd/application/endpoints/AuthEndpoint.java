@@ -21,14 +21,14 @@ public class AuthEndpoint {
 	@org.springframework.web.bind.annotation.PostMapping("/logout")
 	public void logout(@org.springframework.web.bind.annotation.RequestParam("token") String token) throws Exception {
 		// Start of user code logout
-		
+		at.fhv.cicd.application.handlers.AuthHandler.getInstance().logout(token);
 		// End of user code
 	}
 	
 	@org.springframework.web.bind.annotation.PostMapping("/login")
 	public String login(@org.springframework.web.bind.annotation.RequestParam("email") String email) throws Exception {
 		// Start of user code login
-		return null;
+		return at.fhv.cicd.application.handlers.AuthHandler.getInstance().login(email);
 		// End of user code
 	}
 	

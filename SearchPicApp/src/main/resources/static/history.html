@@ -1,101 +1,116 @@
 <!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>History</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="css/styleInput.css">
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        
-        <style>
-                table {
-                  font-family: arial, sans-serif;
-                  border-collapse: collapse;
-                  width: 100%;
-                }
-                
-                td, th {
-                  border: 1px solid #dddddd;
-                  text-align: left;
-                  padding: 8px;
-                }
-                
-                tr:nth-child(even) {
-                  background-color: #dddddd;
-                }
-        </style>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload-0 is-preload-1 is-preload-2">
-		
-		<!-- Main -->
-			<div id="main">
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<!-- Header Titel of the Website -->
-						<h1>History</h1>
-
-						<!-- Here we have the Show histroy Button -->
-                        <p>Go Back to <a href="index.html">Search Picture</a></p>
-                        
-                        <table>
-                            <tr>
-                                <th>ID</th>
-                                <th>Search term</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Bird</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Francisco Chang</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Roland Mendel</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Helen Bennett</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Yoshi Tannamuri</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Giovanni Rovelli</td>
-                            </tr>
-                        </table>
+						<h1><a href="history.html">History</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
 					</header>
 
-				<!-- Thumbnail -->
-					<section id="thumbnails">
-						<article>
-							<a class="thumbnail" href="images/fulls/01.jpg" data-position="left center"></a>
-							<h2>Diam tempus accumsan</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </article>
-                        
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="search.html">Search</a></li>
+								<li><a id="logoutBtn" href="login.html">Sign Out</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+                    </nav>
+                    
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<section>
+										<h3 class="major">History</h3>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
+								</div>
+							</div>
+
 					</section>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: FHV.</li>
-						</ul>
-					</footer>
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: FHV</li>
+							</ul>
+						</div>
+					</section>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="assets/js/sessionStorage.js"></script>
+        	<script src="assets/js/auth.js"></script>
 	</body>
 </html>

@@ -57,7 +57,7 @@ public class PictureHandler {
 		SearchParameters params = new SearchParameters();
 		params.setText(text);
 		try {
-			photos = photosInterface.search(params, 10, 10);
+			photos = photosInterface.search(params, 9, 9);
 		} catch (Exception e)
 		{
 			System.out.println("The get photos didn't workes!");
