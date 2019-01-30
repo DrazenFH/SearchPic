@@ -42,7 +42,7 @@ jobs:
         - ../../tests/scripts/get_testingbot_video.py
         - git add --all
         - git commit -am "update documentation"
-        - git push "https://${LvDRLvHErOGeNUwDyFcXgwN}@github.com/DrazenFH/SearchPic.git/docs.git" master
+        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/SearchPic.git/docs.git" master
     - stage: deploy to production
       script: skip
       deploy:
