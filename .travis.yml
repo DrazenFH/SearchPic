@@ -3,15 +3,15 @@ jobs:
     - stage: build application
       script:
         - mvn install
-    - stage: search pic
+    - stage: static code analysis
       addons:
         sonarcloud:
-          organization: fhv-continuous-delivery
+          organization: drazenfh-github
           token: ${SONAR_TOKEN}
       script:
         - mvn org.jacoco:jacoco-maven-plugin:prepare-agent javadoc:javadoc verify sonar:sonar
         - cd ..
-        - "git clone https://github.com/DrazenFH/SearchPic.git/docs.git"
+        - "git clone https://github.com/DrazenFH/SearchPic.git/searchPicDocs.git"
         - rm -rf docs/generated/jacoco-ut docs/generated/jacoco-it docs/generated/apidocs
         - cp -r application/target/site/jacoco-ut docs/generated/
         - cp -r application/target/site/jacoco-it docs/generated/
@@ -29,11 +29,11 @@ jobs:
     - stage: automatic user acceptance and performance tests on staging
       script:
         - cd ..
-        - "git clone https://github.com/DrazenFH/SearchPic.git/tests.git"
+        - "git clone https://github.com/DrazenFH/SearchPic.git/searchPicTests.git"
         - cd tests
         - mvn verify
         - cd ..
-        - "git clone https://github.com/DrazenFH/SearchPic.git/docs.git"
+        - "git clone https://github.com/DrazenFH/SearchPic.git/searchPicDocs.git"
         - rm -rf docs/generated/cukedoctor docs/generated/walk_through.mp4
         - cp -r tests/target/cukedoctor docs/generated/
         - rm -rf docs/generated/jmeter

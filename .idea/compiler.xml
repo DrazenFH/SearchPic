@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SearchPic" />
         <module name="searchPicSpring" />
         <module name="uml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SearchPic" target="1.8" />
       <module name="searchPicSpring" target="1.8" />
       <module name="uml" target="1.5" />
     </bytecodeTargetLevel>
