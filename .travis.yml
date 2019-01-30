@@ -3,7 +3,7 @@ jobs:
     - stage: build application
       script:
         - mvn install
-    - stage: static code analysis
+    - stage: search pic
       addons:
         sonarcloud:
           organization: fhv-continuous-delivery
