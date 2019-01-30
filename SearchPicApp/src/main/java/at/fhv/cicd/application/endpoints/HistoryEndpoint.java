@@ -14,7 +14,7 @@ public class HistoryEndpoint {
 	@org.springframework.web.bind.annotation.GetMapping("/history")
 	public at.fhv.cicd.application.models.History getHistory(@org.springframework.web.bind.annotation.RequestParam("token") String token) throws Exception {
 		// Start of user code getHistory
-		return null;
+		return at.fhv.cicd.application.handlers.HistoryHandler.getInstance().getHistory(token);
 		// End of user code
 	}
 	

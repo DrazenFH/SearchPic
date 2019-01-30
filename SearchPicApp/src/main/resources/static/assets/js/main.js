@@ -416,13 +416,15 @@ var main = (function($) { var _ = {
 							loaded: false
 						};
 
+						
+
 					// Parent.
 						$this.attr('tabIndex', '-1');
 
 					// Slide.
 
 						// Create elements.
-	 						s.$slide = $('<div class="slide"><div class="caption"></div><div class="image"></div></div>');
+	 						s.$slide = $('<div class="slide"><div class="caption"></div><div id ="test01" class="image"></div></div>');
 
 	 					// Image.
  							s.$slideImage = s.$slide.children('.image');

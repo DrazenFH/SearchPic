@@ -9,14 +9,12 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @org.springframework.web.bind.annotation.RestController
 public class AuthEndpoint {
-
+	// Start of user code (user defined attributes)
 	//Test-Mapping
 	@RequestMapping("/")
 	public String index(){
 		return "Greetings from Spring Boot!";
 	}
-	// Start of user code (user defined attributes)
-	
 	// End of user code
 	
 	
