@@ -15,18 +15,18 @@ $(document).ready(function () {
             //TODO:
             //Hier müssen wir unsere Liste füllen..
 
-            // response.items.forEach(function (data) {
-            //     var sentimentClass = "";
+             response.items.forEach(function (data) {
+                 // var sentimentClass = "";
 
-            //     if (data.result.sentiment == 'Positive') {
-            //         sentimentClass = 'fa-smile-o';
-            //     } else if (data.result.sentiment == 'Neutral') {
-            //         sentimentClass = 'fa-meh-o';
-            //     } else {
-            //         sentimentClass = 'fa-frown-o';
-            //     }
-            //     $('#historyTable tbody').append('<tr><td>' + data.text + '</td><td style="text-align: center;"><i class="fa ' + sentimentClass + ' fa-2x" aria-hidden="true"></i></td><td style="text-align: center;">' + data.result.confidence + '%</td><td>' + FormatDate(EpochToDate(data.requested)) + '</td></tr>');
-            // });
+                 // if (data.result.sentiment == 'Positive') {
+                 //     sentimentClass = 'fa-smile-o';
+                 // } else if (data.result.sentiment == 'Neutral') {
+                 //   sentimentClass = 'fa-meh-o';
+                 // } else {
+                 //     sentimentClass = 'fa-frown-o';
+                 // }
+               $('#historyTable tbody').append('<tr><td>' + data.text + '</td><td style="text-align: center;"><i class="fa ' + sentimentClass + ' fa-2x" aria-hidden="true"></i></td><td style="text-align: center;">' + data.result.confidence + '%</td><td>' + FormatDate(EpochToDate(data.requested)) + '</td></tr>');
+             });
         },
         error: function (response) {
             alert('error loading data');
