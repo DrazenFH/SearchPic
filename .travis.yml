@@ -7,25 +7,25 @@ jobs:
       addons:
         sonarcloud:
           organization: drazenfh-github
-          token: ${SONAR_TOKEN}
+          token: $SONAR_TOKEN
       script:
         - mvn org.jacoco:jacoco-maven-plugin:prepare-agent javadoc:javadoc verify sonar:sonar
         - cd ..
         - "git clone https://github.com/DrazenFH/searchPicDocs.git"
         - rm -rf searchPicDocs/generated/jacoco-ut searchPicDocs/generated/jacoco-it docs/generated/apidocs
-        - cp -r SearchPic/target/site/jacoco-ut searchPicDocs/generated/
-        - cp -r SearchPic/target/site/jacoco-it searchPicDocs/generated/
-        - cp -r SearchPic/target/site/apidocs searchPicDocs/generated/
+        - cp -r searchPicApp/target/site/jacoco-ut searchPicDocs/generated/
+        - cp -r searchPicApp/target/site/jacoco-it searchPicDocs/generated/
+        - cp -r searchPicApp/target/site/apidocs searchPicDocs/generated/
         - cd searchPicDocs/generated
         - git add --all
         - git commit -am "update documentation"
-        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
+        - git push "https://$TRAVIS_TOKEN@github.com/DrazenFH/searchPicDocs.git" master
     - stage: deploy to staging
       script: skip
       deploy: &heroku
         provider: heroku
         app: searchpic-staging
-        api_key: ${HEROKU_TOKEN}
+        api_key: $HEROKU_TOKEN
     - stage: automatic user acceptance and performance tests on staging
       script:
         - cd ..
@@ -42,7 +42,7 @@ jobs:
         - ../../tests/scripts/get_testingbot_video.py
         - git add --all
         - git commit -am "update documentation"
-        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
+        - git push "https://$TRAVIS_TOKEN@github.com/DrazenFH/searchPicDocs.git" master
     - stage: deploy to production
       script: skip
       deploy:
