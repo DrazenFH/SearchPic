@@ -77,6 +77,8 @@ public class PictureHandler {
 		}
 		pictureResult.setPictureURL(urlList);
 
+		HistoryHandler.getInstance().addHistory(token, text, pictureResult);
+
 		return pictureResult;
 		// End of user code
 	}
