@@ -24,6 +24,7 @@ $(function() {
         $('#searchBtn').prop("disabled",true);
         $('#searchBtn').html('Loading...');
 
+
         $.ajax({
             url: "/analyze",
             type: "POST",
@@ -43,6 +44,9 @@ $(function() {
                 document.getElementById('img07').src = response.pictureURL[6];
                 document.getElementById('img08').src = response.pictureURL[7];
                 document.getElementById('img09').src = response.pictureURL[8];
+
+
+
             },
             error: function (response) {
                 alert('error loading data');
