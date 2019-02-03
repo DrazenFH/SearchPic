@@ -2,7 +2,7 @@ $(document).ready(function () {
     var token = read('token');
     console.log(token);
     if (!token){
-        window.location.replace("login.html");
+        window.location.replace("index.html");
     }
 });
 

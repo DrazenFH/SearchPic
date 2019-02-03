@@ -10,11 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @org.springframework.web.bind.annotation.RestController
 public class AuthEndpoint {
 	// Start of user code (user defined attributes)
-	//Test-Mapping
-	@RequestMapping("/")
-	public String index(){
-		return "Greetings from Spring Boot!";
-	}
+	//Here we can define the Starting Page, default is index.html
 	// End of user code
 	
 	
