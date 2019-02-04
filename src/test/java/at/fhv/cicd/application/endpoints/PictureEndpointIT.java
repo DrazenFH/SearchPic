@@ -7,8 +7,6 @@ import org.junit.Test;
 
 /**
  * Integration tests for {@link PictureEndpoint}
- * 
- * @author Michael Sieber - edited by Drazen Lukic
  *
  */
 public class PictureEndpointIT {
@@ -25,7 +23,21 @@ public class PictureEndpointIT {
 		String token = authEndpoint.login("user@test.com");
 		PictureResult result = pictureEndpoint.search("", token);
 
+		//asserNotNull because by default an image is loaded
 		Assert.assertNotNull(result);
+
+	}
+
+	@Test
+	public void testSearchPicWithText () throws Exception{
+		AuthEndpoint authEndpoint = new AuthEndpoint();
+		PictureEndpoint pictureEndpoint = new PictureEndpoint();
+		String token = authEndpoint.login("user@test.com");
+		PictureResult result = pictureEndpoint.search("Dog",token);
+
+		//9-because 9 images loaded by default
+		Assert.assertEquals(result.pictureURL.size(),9);
+
 
 	}
 

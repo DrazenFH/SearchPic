@@ -5,8 +5,6 @@ import org.junit.Test;
 
 /**
  * Integration tests for {@link AuthEndpoint}
- * 
- * @author Michael Sieber - edited by Drazen Lukic
  *
  */
 public class AuthEndpointIT {

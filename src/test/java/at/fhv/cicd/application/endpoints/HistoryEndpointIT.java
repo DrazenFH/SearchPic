@@ -4,8 +4,6 @@ import org.junit.Test;
 
 /**
  * Integration tests for {@link HistoryEndpoint}
- * 
- * @author Michael Sieber - edited by Drazen Lukic
  *
  */
 public class HistoryEndpointIT {
