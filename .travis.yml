@@ -24,7 +24,7 @@ jobs:
       script: skip
       deploy: &heroku
         provider: heroku
-        app: searchpic
+        app: searchpic-staging
         api_key: $HEROKU_TOKEN
     - stage: automatic user acceptance and performance tests on staging
       script:
