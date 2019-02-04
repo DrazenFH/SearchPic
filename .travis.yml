@@ -19,7 +19,7 @@ jobs:
         - cd searchPicDocs/generated
         - git add --all
         - git commit -am "update documentation"
-        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
+        - git push "https://${TRAVIS_GITHUB_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
     - stage: deploy to staging
       script: skip
       deploy: &heroku
@@ -42,7 +42,7 @@ jobs:
         - ../../tests/scripts/get_testingbot_video.py
         - git add --all
         - git commit -am "update documentation"
-        - git push "https://${TRAVIS_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
+        - git push "https://${TRAVIS_GITHUB_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
     - stage: deploy to production
       script: skip
       deploy:
