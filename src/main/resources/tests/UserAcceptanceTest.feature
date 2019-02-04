@@ -1,5 +1,5 @@
 Background:
-  Given Open https://fhv-application-stagin.herokuapp.com/
+  Given Open https://searchpic.herokuapp.com/
 
   Scenario Test login and logut
   Given Login with user 'admin'
