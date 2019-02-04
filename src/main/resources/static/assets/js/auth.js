@@ -31,7 +31,7 @@ $(function() {
             },
             success: function (response) {
                 clear();
-                window.location.replace("login.html");
+                window.location.replace("index.html");
             },
             error: function (response) {
                 alert('error during login, please try again');
