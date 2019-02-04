@@ -30,16 +30,16 @@ jobs:
       script:
         - cd ..
         - "git clone https://github.com/DrazenFH/searchPicTests.git"
-        - cd tests
+        - cd searchPicTests
         - mvn verify
         - cd ..
         - "git clone https://github.com/DrazenFH/searchPicDocs.git"
         - rm -rf searchPicDocs/generated/cukedoctor searchPicDocs/generated/walk_through.mp4
-        - cp -r tests/target/cukedoctor searchPicDocs/generated/
+        - cp -r searchPicTests/target/cukedoctor searchPicDocs/generated/
         - rm -rf searchPicDocs/generated/jmeter
         - cp -r searchPicTests/target/jmeter/reports/performance* searchPicDocs/generated/jmeter
         - cd searchPicDocs/generated
-        - ../../tests/scripts/get_testingbot_video.py
+        - ../../searchPicTests/scripts/get_testingbot_video.py
         - git add --all
         - git commit -am "update documentation"
         - git push "https://${TRAVIS_GITHUB_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master

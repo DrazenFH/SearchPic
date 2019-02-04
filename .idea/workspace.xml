@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="-2704">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="422">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
@@ -121,9 +121,9 @@
       <find>continuous</find>
       <find>sonar</find>
       <find>coverage</find>
-      <find>searchPicApp/target/site/jacoco-ut</find>
       <find>jacoco</find>
       <find>application</find>
+      <find>searchPicApp/target/site/jacoco-ut</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,7 +166,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -240,14 +240,41 @@
               <item name="searchPicApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="searchPicApp" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="searchPicApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="searchPicApp" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="jacoco-it" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="at" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="searchPicApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="searchPicApp" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="at" type="462c0819:PsiDirectoryNode" />
+              <item name="fhv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="searchPicApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="searchPicApp" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="at" type="462c0819:PsiDirectoryNode" />
+              <item name="fhv" type="462c0819:PsiDirectoryNode" />
+              <item name="cicd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="searchPicApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="searchPicApp" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="at" type="462c0819:PsiDirectoryNode" />
+              <item name="fhv" type="462c0819:PsiDirectoryNode" />
+              <item name="cicd" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,7 +293,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549306410431" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549307503992" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../searchPicDocs" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -462,7 +489,7 @@
       <workItem from="1548962143082" duration="70000" />
       <workItem from="1549218800395" duration="1796000" />
       <workItem from="1549281725997" duration="5075000" />
-      <workItem from="1549295610448" duration="8705000" />
+      <workItem from="1549295610448" duration="9688000" />
     </task>
     <task id="LOCAL-00001" summary="travis file updated">
       <created>1548869929465</created>
@@ -597,7 +624,21 @@
       <option name="project" value="LOCAL" />
       <updated>1549304274132</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="pom.xml updated">
+      <created>1549306417798</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1549306417798</updated>
+    </task>
+    <task id="LOCAL-00021" summary="pom.xml updated">
+      <created>1549306424162</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1549306424162</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -633,13 +674,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40233000" />
+    <option name="totallyTimeSpent" value="41216000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.16364606" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.34573305" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -655,9 +696,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5660981" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5656455" visible="true" weight="0.33150986" />
       <window_info anchor="bottom" id="Sequence" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4339019" side_tool="true" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.43435448" side_tool="true" visible="true" weight="0.33150986" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4978678" weight="0.32934782" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49735048" weight="0.32826087" />
@@ -673,7 +714,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.14392324" />
+      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.11269147" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.3326226" />
@@ -1046,15 +1087,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="-2704">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="422">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
