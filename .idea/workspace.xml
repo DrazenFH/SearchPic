@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f558a724-ede2-4e3c-8dc6-a0254e8c5e90" name="Default Changelist" comment="">
+    <list default="true" id="f558a724-ede2-4e3c-8dc6-a0254e8c5e90" name="Default Changelist" comment="pom.xml updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="108" column="51" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="51" />
+            <state relative-caret-position="256">
+              <caret line="169" selection-start-line="169" selection-end-line="177" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -257,11 +257,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="searchPicApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="searchPicApp" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -475,7 +470,7 @@
       <workItem from="1548962143082" duration="70000" />
       <workItem from="1549218800395" duration="1796000" />
       <workItem from="1549281725997" duration="5075000" />
-      <workItem from="1549295610448" duration="1850000" />
+      <workItem from="1549295610448" duration="2924000" />
     </task>
     <task id="LOCAL-00001" summary="travis file updated">
       <created>1548869929465</created>
@@ -554,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1549297164747</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="pom.xml updated">
+      <created>1549297480366</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1549297480366</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -590,13 +592,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33378000" />
+    <option name="totallyTimeSpent" value="34452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.14498934" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.14498934" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -606,15 +608,15 @@
       <window_info id="Web" order="7" sideWeight="0.50567263" side_tool="true" weight="0.24786781" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917705" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47441363" weight="0.33150986" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47441363" visible="true" weight="0.33044422" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.70584863" weight="0.39782608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5671642" weight="0.32934782" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.56663114" weight="0.32827735" />
       <window_info anchor="bottom" id="Sequence" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.52558637" side_tool="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.43336886" side_tool="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4978678" weight="0.32934782" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49735048" weight="0.32826087" />
@@ -630,7 +632,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Maven" order="10" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.68490154" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.3326226" />
@@ -1007,8 +1009,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="108" column="51" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="51" />
+        <state relative-caret-position="256">
+          <caret line="169" selection-start-line="169" selection-end-line="177" selection-end-column="44" />
         </state>
       </provider>
     </entry>
