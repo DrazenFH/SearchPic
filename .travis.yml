@@ -39,7 +39,7 @@ jobs:
         - rm -rf searchPicDocs/generated/jmeter
         - cp -r searchPicTests/target/jmeter/reports/performance* searchPicDocs/generated/jmeter
         - cd searchPicDocs/generated
-        - ../../searchPicTests/scripts/get_testingbot_video.py
+        - chmod +x ../../searchPicTests/scripts/get_testingbot_video.py
         - git add --all
         - git commit -am "update documentation"
         - git push "https://${TRAVIS_GITHUB_TOKEN}@github.com/DrazenFH/searchPicDocs.git" master
