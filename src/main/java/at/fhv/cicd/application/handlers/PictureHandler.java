@@ -37,17 +37,13 @@ public class PictureHandler {
 		java.util.Set<String> urlList = new java.util.HashSet<String>();
 		// Start of user code search
 		if (text == null || "".equals(text)) {
-
 			//Wenn Input-Feld leer ist, soll diese Url geladen werden
 			String defaultUrl = "https://farm8.staticflickr.com/7908/46888308852_cc302c9992.jpg";
 			urlList.add(defaultUrl);
 
 			pictureResult.setPictureURL(urlList);
-
 			return pictureResult;
-
 		} else {
-
 
 			String apiKey = "ab1f7cb6e627e6683eaf1b19e60bed55";
 			String sharedSecret = "800b5d8deabf33a7";
@@ -75,10 +71,10 @@ public class PictureHandler {
 
 				urlList.add(url);
 			}
+
 			pictureResult.setPictureURL(urlList);
 
 			HistoryHandler.getInstance().addHistory(token, text, pictureResult);
-
 			return pictureResult;
 			// End of user code
 		}
