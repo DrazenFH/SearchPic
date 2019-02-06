@@ -15,7 +15,6 @@ public class PictureEndpointIT {
 	 * Test analysis with empty search
 	 */
 
-	//ToDo: Test für unser Programm anpassen
 @Test
 	public void testSearchPicEmptyText() throws Exception {
 		AuthEndpoint authEndpoint = new AuthEndpoint();

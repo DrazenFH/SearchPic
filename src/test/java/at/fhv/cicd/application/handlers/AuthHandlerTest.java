@@ -9,7 +9,7 @@ import at.fhv.cicd.application.models.User;
 /**
  * Unit tests for {@link AuthHandler}
  * 
- * @author Michael Sieber
+ *
  *
  */
 public class AuthHandlerTest {

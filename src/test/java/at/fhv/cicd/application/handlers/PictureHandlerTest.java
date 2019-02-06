@@ -7,10 +7,10 @@ import org.junit.Test;
 
 /**
  * Unit tests for {@link PictureHandler}
- * @author Michael Sieber - edited by Drazen Lukic
+ *
  *
  */
-public class AnalysisHandlerTest {
+public class PictureHandlerTest {
 
 	@Test
 	public void testSingleton() {

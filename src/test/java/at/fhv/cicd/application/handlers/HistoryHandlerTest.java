@@ -7,7 +7,7 @@ import at.fhv.cicd.application.handlers.HistoryHandler;
 
 /**
  * Unit tests for {@link HistoryHandler}
- * @author Michael Sieber
+ *
  *
  */
 public class HistoryHandlerTest {
